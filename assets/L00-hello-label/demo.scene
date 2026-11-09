@@ -137,7 +137,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 1000
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -198,9 +198,9 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 360,
+    "_orthoHeight": 431.5657620041754,
     "_near": 1,
-    "_far": 1000,
+    "_far": 2000,
     "_color": {
       "__type__": "cc.Color",
       "r": 51,
@@ -248,9 +248,9 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+      "x": 5.602,
+      "y": 214.625,
+      "z": 69.709
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -461,7 +461,9 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_cameraComponent": null,
+    "_cameraComponent": {
+      "__id__": 5
+    },
     "_alignCanvasWithScreen": true,
     "_id": "87tL9fXzVCerIw9NGHxGyk"
   },
