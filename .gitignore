@@ -1,0 +1,25 @@
+# ===== Cocos Creator 生成目录(不进 git) =====
+/library/
+/temp/
+/local/
+/profiles/
+/build/
+/native/
+
+# ===== 依赖 =====
+node_modules/
+
+# ===== 系统与临时文件 =====
+.DS_Store
+Thumbs.db
+nul
+*.log
+
+# ===== 环境变量与敏感文件 =====
+.env
+.env.*
+!.env.example
+
+# ===== 保留(显式说明,防止误加忽略规则) =====
+# assets/、extensions/(插件本体,不含 node_modules)、settings/、
+# package.json、docs/、.zcode/ 均需提交

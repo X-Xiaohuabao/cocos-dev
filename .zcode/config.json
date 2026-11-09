@@ -1,0 +1,51 @@
+{
+  "hooks": {
+    "enabled": true,
+    "events": {
+      "UserPromptSubmit": [
+        {
+          "hooks": [
+            {
+              "type": "command",
+              "command": "node \"${ZCODE_PROJECT_DIR}/.zcode/hooks/skill-forced-eval.cjs\"",
+              "statusMessage": "评估匹配的技能"
+            }
+          ]
+        }
+      ],
+      "PreToolUse": [
+        {
+          "matcher": "Bash",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "node \"${ZCODE_PROJECT_DIR}/.zcode/hooks/pre-tool-use.cjs\"",
+              "timeoutMs": 5000,
+              "statusMessage": "检查危险命令"
+            }
+          ]
+        }
+      ],
+      "Stop": [
+        {
+          "hooks": [
+            {
+              "type": "command",
+              "command": "node \"${ZCODE_PROJECT_DIR}/.zcode/hooks/stop.cjs\"",
+              "timeoutMs": 10000,
+              "statusMessage": "清理 nul 残留文件"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "mcp": {
+    "servers": {
+      "cocos-creator": {
+        "type": "http",
+        "url": "http://127.0.0.1:3000/mcp"
+      }
+    }
+  }
+}
