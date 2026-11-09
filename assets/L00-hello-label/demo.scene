@@ -25,7 +25,6 @@
     ],
     "_active": true,
     "_components": [],
-    "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
